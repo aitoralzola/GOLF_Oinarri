@@ -1,0 +1,20 @@
+*{ 
+margin:0; 
+padding:0; 
+list-style:none; 
+text-decoration:none; 
+} 
+ 
+body{ 
+overflow:hidden; 
+} 
+ 
+#contenedor{ 
+position:relative; 
+margin:5vh auto;	 
+height:1000; 
+width:2000; 
+} 
+#lienzo { 
+  background-image:url("golf_irudia (1).png"); 
+} 
