@@ -44,3 +44,9 @@ function reducir(){
 	ampli.setAttribute("onClick", "ampliar()") 
 } 
 
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.lineWidth(100);
+ctx.strokeStyle("red");
+ctx.stroke();
