@@ -43,3 +43,4 @@ function reducir(){
  
 	ampli.setAttribute("onClick", "ampliar()") 
 } 
+

@@ -1,4 +1,4 @@
-*{ 
+{ 
 margin:0; 
 padding:0; 
 list-style:none; 
@@ -17,4 +17,6 @@ width:2000;
 } 
 #lienzo { 
   background-image:url("golf_irudia (1).png"); 
+  background-size:100% 100%;
+	background-attachment:fixed;
 } 
