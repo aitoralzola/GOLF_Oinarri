@@ -47,9 +47,9 @@ function component(width, height, color, x, y, type) {
     this.y = y;    
     this.speedX = 1;
     this.speedY = 1;    
-    this.gravity = 0.05;
+    this.gravity = 9.8;
     this.gravitySpeed = 0;
-    this.bounce = 1;
+    this.bounce = 0.5;
     this.update = function() {
         ctx = myGameArea.context;
         ctx.fillStyle = color;
@@ -60,7 +60,27 @@ function component(width, height, color, x, y, type) {
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
         this.hitBottom();
+		if(this.x > 450){
+		this.speedX = -this.speedX;
+		}
+		if(this.x < 0){
+		this.speedX = -this.speedX;
+		}
+		if(this.y < 0){
+		this.x = x;
+		this.y = y;    
+		this.speedX = 1;
+		this.speedY = 1; 
+		this.speedX = 1;
+		this.speedY = 1;    
+		this.gravity = 1;
+		this.gravitySpeed = 0;
+		this.bounce = 1;		
+		}
+		
     }
+	
+	
     this.hitBottom = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
         if (this.y > rockbottom) {
