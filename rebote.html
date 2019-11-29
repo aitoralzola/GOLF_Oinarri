@@ -45,9 +45,9 @@ function component(width, height, color, x, y, type) {
     this.height = height;
     this.x = x;
     this.y = y;    
-    this.speedX = 1;
-    this.speedY = 1;    
-    this.gravity = 9.8;
+    this.speedX = 10;
+    this.speedY = 10;    
+    this.gravity = 1;
     this.gravitySpeed = 0;
     this.bounce = 0.5;
     this.update = function() {
@@ -69,13 +69,13 @@ function component(width, height, color, x, y, type) {
 		if(this.y < 0){
 		this.x = x;
 		this.y = y;    
-		this.speedX = 1;
-		this.speedY = 1; 
-		this.speedX = 1;
-		this.speedY = 1;    
-		this.gravity = 1;
-		this.gravitySpeed = 0;
-		this.bounce = 1;		
+		this.speedX = 2;
+		this.speedY = 2; 
+		this.speedX = 2;
+		this.speedY = 2;    
+		this.gravity = 0;
+		this.gravitySpeed = 0.5;
+		this.bounce = 5;		
 		}
 		
     }
@@ -95,6 +95,8 @@ function updateGameArea() {
     myGamePiece.newPos();
     myGamePiece.update();
 }
+
+
 
 </script>
 
