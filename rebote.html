@@ -19,7 +19,9 @@ var myGamePiece;
 function startGame() {
     myGamePiece = new component(30, 30, "yellow", 0, 0);
     myGameArea.start();
+	
 }
+
 
 
 var myGameArea = {
@@ -45,9 +47,9 @@ function component(width, height, color, x, y, type) {
     this.height = height;
     this.x = x;
     this.y = y;    
-    this.speedX = 10;
-    this.speedY = 10;    
-    this.gravity = 1;
+    this.speedX = 1;
+    this.speedY = 1;    
+    this.gravity = 0.1;
     this.gravitySpeed = 0;
     this.bounce = 0.5;
     this.update = function() {
