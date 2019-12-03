@@ -10,7 +10,7 @@ overflow:hidden;
 } 
  
 #contenedor{ 
-position:relative; 
+position:fixed; 
 margin:5vh auto;	 
 height:1000; 
 width:2000; 
