@@ -1,22 +1,21 @@
-{ 
-margin:0; 
-padding:0; 
-list-style:none; 
-text-decoration:none; 
-} 
+*{
+margin:0;
+padding:0;
+list-style:none;
+text-decoration:none;
+}
  
-body{ 
-overflow:hidden; 
-} 
+body{
+overflow:hidden;
+}
  
-#contenedor{ 
-position:fixed; 
-margin:5vh auto;	 
-height:1000; 
-width:2000; 
+#contenedor{
+position:fixed;
+margin:5vh auto;
+height:1000;
+width:2000;
+}
+#lienzo {
+  background-image:url("golf_irudia (1).png");
 } 
-#lienzo { 
-  background-image:url("golf_irudia (1).png"); 
-  background-size:100% 100%;
-	background-attachment:fixed;
-} 
+
